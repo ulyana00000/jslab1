@@ -1,5 +1,4 @@
 
-
 .body {
     
     width: 100vw;
@@ -138,6 +137,7 @@
 .result{
 
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -301,23 +301,164 @@
 }
 
 
-table {
+
+/* Існуючі стилі залишаються без змін */
+
+/* Нові стилі для розділу результатів і форм */
+
+.result form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
-    background-color: #f8f9fa;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
 }
 
-th, td {
-  
-    border: 1px solid #000000;
-    padding: 12px;
-    text-align: left;
-    font-size: 1rem;
-}
-
-th {
-    background-color: #6c757d;
-    color: white;
+.result form label {
+    font-size: 18px;
     font-weight: bold;
+}
+
+.result form input,
+.result form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.result form input:focus,
+.result form select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.result form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Стилі для радіокнопок */
+.result label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result label input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #007BFF;
+    cursor: pointer;
+}
+
+/* Кнопка обчислення */
+.result button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Стилі для відображення результатів */
+#result {
+    
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e8f5e9;
+    border: 2px solid #c8e6c9;
+    border-radius: 8px;
+}
+
+/* Адаптивність для нових елементів */
+@media (max-width: 768px) {
+    .result form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .result form label {
+        font-size: 16px;
+    }
+
+    .result form input,
+    .result form select {
+        font-size: 14px;
+    }
+
+    .result form h2 {
+        font-size: 20px;
+    }
+
+    .result button {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    .result form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .result form label {
+        font-size: 14px;
+    }
+
+    .result form input,
+    .result form select {
+        font-size: 12px;
+    }
+
+    .result form h2 {
+        font-size: 18px;
+    }
+
+    .result button {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
 }

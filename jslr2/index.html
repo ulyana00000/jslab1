@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chornomaz lr1 js</title>
+
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="/jslr2/style.css">
+    <script  src="lr2.js"></script>
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1>
+            Лабораторна робота №2  
+        </h1>
+
+        <h2 >
+            Виконала Чорномаз Уляна Олександрівна
+            <br> КН-32
+        </h2>
+
+    </header>
+
+    <main class="main">
+        <section class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="../main.html">
+                        Лабораторна робота 1
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Лабораторна робота 2
+                    </a>
+                </li>
+                <li>
+                    <a href="../jslr3/index.html">
+                        Лабораторна робота 3
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Лабораторна робота 4
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mytask">
+
+            <h3>
+                Завдання 1
+            </h3>
+            <p class="zavd">
+                9. У формі є список фруктів та поле для введення їх вартості, після натискання Enter при введені вартості сформуйте список в якому зазначена назва фрукту та його вартість.
+            </p>
+            <h3>
+                Завдання 2
+            </h3>
+            <p class="zavd">
+                3. Дана таблиця з числами. При натисканні на кнопку в останній ряд таблиці в кожну клітинку запишіть суму чисел в стовпці таблиці.
+            </p>
+        </section>
+
+        <section class="result">
+            <h1>Додайте вартість фруктів</h1>
+            <label for="fruitSelect">Оберіть фрукт:</label>
+            <select id="fruitSelect">
+                <option value="Яблуко">Яблуко</option>
+                <option value="Банан">Банан</option>
+                <option value="Апельсин">Апельсин</option>
+                <option value="Ківі">Ківі</option>
+                <option value="Виноград">Виноград</option>
+                <option value="Хурма">Хурма</option>
+                <option value="Гранат">Гранат</option>
+                
+            </select>
+            <br>
+            <label for="priceInput">Введіть вартість:</label>
+            <input type="text" id="priceInput" placeholder="Введіть вартість">
+            <ul id="fruitList"></ul>
+        
+            <!-- Завдання 2: Таблиця з числами -->
+            <h1>Таблиця з числами</h1>
+            <table border="6" id="numberTable">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr id="sumRow">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <button onclick="calculateColumnSums()">Підрахувати суму</button>
+        
+            <script src="lr2.js"></script>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

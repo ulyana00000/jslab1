@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chornomaz lr1 js</title>
+
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="/jslr3/styles.css">
+   
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1>
+            Лабораторна робота №3  
+        </h1>
+
+        <h2 >
+            Виконала Чорномаз Уляна Олександрівна
+            <br> КН-32
+        </h2>
+
+    </header>
+
+    <main class="main">
+        <section class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="../main.html">
+                        Лабораторна робота 1
+                    </a>
+                </li>
+                <li>
+                    <a href="../jslr2/index.html">
+                        Лабораторна робота 2
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Лабораторна робота 3
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Лабораторна робота 4
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mytask">
+
+            <h3>
+                Завдання :
+            </h3>
+            
+            <p class="zavd">
+                5. Базовий клас: Поле (поля: назва, r - вага посіяних насіння на одиницю площі)
+Метод: Кількість врожаю з одиниці площі: k * r, де k - коефіцієнт.
+
+<br>Нащадок: Картопляне (поле S - площа поля)
+Зміни в нащадках: Знайти урожай з усього поля.
+        </section>
+
+        <section class="result">
+            <h1>Розрахунок урожаю</h1>
+
+    
+    <label>
+        <input type="radio" name="calculationType" id="useBaseClass" checked>
+        Використати базовий клас (Field)
+    </label>
+    <label>
+        <input type="radio" name="calculationType" id="useChildClass">
+        Використати нащадок (PotatoField)
+    </label>
+
+   
+    <div id="baseClassForm">
+        <h2>Базовий клас: Поле</h2>
+        <form id="fieldForm">
+            <label for="fieldName">Назва поля:</label>
+            <input type="text" id="fieldName" placeholder="Наприклад: Поле зернових" required>
+
+            <label for="seedWeight">Вага насіння на одиницю площі (r):</label>
+            <input type="number" id="seedWeight" step="0.1" placeholder="Наприклад: 1.5" required>
+
+            <label for="yieldCoefficient">Коефіцієнт врожайності (k):</label>
+            <input type="number" id="yieldCoefficient" step="0.1" placeholder="Наприклад: 2.5" required>
+        </form>
+    </div>
+
+    
+    <div id="childClassForm" style="display: none;">
+        <h2>Нащадок: Картопляне поле</h2>
+        <form id="potatoFieldForm">
+            <label for="potatoFieldName">Назва поля:</label>
+            <input type="text" id="potatoFieldName" placeholder="Наприклад: Картопляне поле" required>
+
+            <label for="seedWeightPotato">Вага насіння на одиницю площі (r):</label>
+            <input type="number" id="seedWeightPotato" step="0.1" placeholder="Наприклад: 1.5" required>
+
+            <label for="fieldArea">Площа поля (S):</label>
+            <input type="number" id="fieldArea" step="0.1" placeholder="Наприклад: 100" required>
+
+            <label for="yieldCoefficientPotato">Коефіцієнт врожайності (k):</label>
+            <input type="number" id="yieldCoefficientPotato" step="0.1" placeholder="Наприклад: 3" required>
+        </form>
+    </div>
+
+   
+    <button id="calculateButton">Обчислити</button>
+
+    <h2>Результати:</h2>
+    <p id="result"></p>
+
+    <script src="lr3.js"></script>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
